@@ -461,6 +461,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-file-header
      ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :weight bold))
       (t (:background ,zenburn-fg :foreground ,zenburn-bg :weight bold))))
+
 ;;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,zenburn-blue :background ,zenburn-blue-2))))
    `(diff-hl-delete ((,class (:foreground ,zenburn-red+1 :background ,zenburn-red-1))))
@@ -974,18 +975,26 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05 :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05 :weight bold
                                                         :foreground ,zenburn-orange))))
-   `(magit-diff-added                  ((t (:background ,zenburn-green-2))))
-   `(magit-diff-added-highlight        ((t (:background ,zenburn-green))))
-   `(magit-diff-removed                ((t (:background ,zenburn-red-4))))
-   `(magit-diff-removed-highlight      ((t (:background ,zenburn-red-3))))
-   `(magit-diff-hunk-heading           ((t (:background ,zenburn-bg+1))))
-   `(magit-diff-hunk-heading-highlight ((t (:background ,zenburn-bg+2))))
+
+   ;; The stripped background for inline diff is distracting, use foreground instead
+   ;; It's good to set background for vdiff. But not good in this case.
+   ;; `(magit-diff-added                  ((t (:background ,zenburn-green-2))))
+   ;; `(magit-diff-added-highlight        ((t (:background ,zenburn-green))))
+   ;; `(magit-diff-removed                ((t (:background ,zenburn-red-4))))
+   ;; `(magit-diff-removed-highlight      ((t (:background ,zenburn-red-3))))
+   `(magit-diff-added ((,class (:foreground ,zenburn-green))))
+   `(magit-diff-removed ((,class (:foreground ,zenburn-red))))
+   `(magit-diff-added-highlight ((,class (:foreground ,zenburn-green+2))))
+   `(magit-diff-removed-highlight ((,class (:foreground ,zenburn-red+1))))
+
+   `(magit-diff-hunk-heading           ((t (:background ,zenburn-bg))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,zenburn-bg+1))))
    `(magit-diff-hunk-heading-selection ((t (:background ,zenburn-bg+2
                                                         :foreground ,zenburn-orange))))
    `(magit-diff-lines-heading          ((t (:background ,zenburn-orange
                                                         :foreground ,zenburn-bg+2))))
-   `(magit-diff-context-highlight      ((t (:background ,zenburn-bg+05
-                                                        :foreground "grey70"))))
+   `(magit-diff-context-highlight      ((t (:foreground ,zenburn-fg+1))))
+
    `(magit-diffstat-added              ((t (:foreground ,zenburn-green+4))))
    `(magit-diffstat-removed            ((t (:foreground ,zenburn-red))))
 ;;;;;; popup
