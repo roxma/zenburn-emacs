@@ -1,4 +1,4 @@
-;;; zenburn-theme.el --- A low contrast color theme for Emacs.
+;; zenburn-theme.el --- A low contrast color theme for Emacs.
 
 ;; Copyright (C) 2011-2020 Bozhidar Batsov
 
@@ -99,14 +99,14 @@ defining them in this alist."
     ("zenburn-fg+1"     . "#FFFFEF")
     ("zenburn-fg+2"     . "#FFFFFD")
     ("zenburn-bg-2"     . "#000000")
-    ("zenburn-bg-1"     . "#2B2B2B")
+    ("zenburn-bg-1"     . "#262626")
     ("zenburn-bg-08"    . "#303030")
-    ("zenburn-bg-05"    . "#383838")
-    ("zenburn-bg"       . "#3F3F3F")
-    ("zenburn-bg+05"    . "#494949")
-    ("zenburn-bg+1"     . "#4F4F4F")
-    ("zenburn-bg+2"     . "#5F5F5F")
-    ("zenburn-bg+3"     . "#6F6F6F")
+    ("zenburn-bg-05"    . "#3a3a3a")
+    ("zenburn-bg"       . "#444444")
+    ("zenburn-bg+05"    . "#4e4e4e")
+    ("zenburn-bg+1"     . "#585858")
+    ("zenburn-bg+2"     . "#626262")
+    ("zenburn-bg+3"     . "#6c6c6c")
     ("zenburn-red-6"    . "#6C3333")
     ("zenburn-red-5"    . "#7C4343")
     ("zenburn-red-4"    . "#8C5353")
